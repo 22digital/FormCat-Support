@@ -1,1 +1,32 @@
 theme: jekyll-theme-minimal
+title: 22 Digital Form Test
+timezone: Africa/Johannesburg
+description: This site contains test forms used at https://forms.22digital.tech.
+url: https://formtest.22digital.tech
+plugins:
+- jemoji
+- jekyll-mentions
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-last-modified-at
+- jekyll-redirect-from
+exclude:
+- ".github"
+- ".sass-cache"
+- _site
+- ".gitignore"
+- ".travis.yml"
+- 22digital.sublime-project
+- 22digital.code-workspace
+- 22digital.sublime-workspace
+- CHANGELOG.md
+- CNAME
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- LICENSE
+- README.md
+- _templates
+- vendor
