@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormCat Demo and Support</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Demo and Support website for the FormCat application at https://form.cat">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- Can use `vue`, `buble`, `dark`, `pure`. Pure is crap. -->
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/buble.css">
+  <link rel="stylesheet" href="/assets/overrides.css">
+  <!-- Load the worker for the PWA. -->
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+</head>
+<body>
+  <div data-app id="app">Please wait...</div>
+  <script>
+    window.$docsify = {
+      name: 'FormCat Support',
+      // repo: '22digital/FormCat-Support',
+      maxLevel: 8,
+      el: '#app',
+      // loadSidebar: true,
+      loadNavbar: true,
+      mergeNavbar: true,
+      autoHeader: true,
+      auto2top: true,
+      coverpage: {
+        '/' : '_coverpage.md',
+        '/ca-ES/' : '../ca-ES/_coverpage.md',
+      },
+      subMaxLevel: 3,
+      alias: {
+        // '/changelog': 'https://raw.githubusercontent.com/22digital/FormCat-Support/master/LICENSE',
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md'
+      },
+      formatUpdated: '{DD}/{MM}/{YYYY} {HH}:{mm}',
+      ga: 'UA-106147152-1',
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.min.js"></script>
+</body>
+</html>
