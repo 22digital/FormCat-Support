@@ -1,4 +1,4 @@
-# :building_construction: Project Change-Log
+# Project Change-Log
 
 Below is a detailed change-log, along with specific tasks completed, for each
 version released to date for the FormCat Support site.
