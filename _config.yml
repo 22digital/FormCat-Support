@@ -1,16 +1,27 @@
-theme: jekyll-theme-minimal
-title: 22 Digital Form Test
+title: 22 Digital Form Support
 timezone: Africa/Johannesburg
-description: This site contains test forms used at https://forms.22digital.tech.
+description: The 22 Digital Form Support website is the official support channel for https://forms.22digital.tech. The support website  provides various FAQs and test forms for you to play around with.
 url: https://formtest.22digital.tech
+theme: jekyll-theme-minimal
+logo: https://forms-22digital.herokuapp.com/static/img/logo.png
+show_downloads: true
+google_analytics: UA-100937492-4
+collections:
+  posts:
+    title                     : Posts
+    output                    : true
+    permalink                 : /:categories/:title.html
+  pages:
+    title                     : Pages
+    output                    : true
+    permalink                 : /:categories/:title.html
 plugins:
-- jemoji
-- jekyll-mentions
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-last-modified-at
 - jekyll-redirect-from
+- jekyll-paginate
 exclude:
 - ".github"
 - ".sass-cache"
@@ -30,3 +41,7 @@ exclude:
 - README.md
 - _templates
 - vendor
+locale                        : "en_ZA"
+# Pagination
+paginate                      : 5
+paginate_path                 : /all/page:num/
